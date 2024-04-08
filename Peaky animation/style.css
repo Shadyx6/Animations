@@ -6,25 +6,25 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #1f3f3b;
-  perspective: 1000px; /* Adds depth to the 3D space */
+  perspective: 1000px;
 }
 
 .carousel {
   width: 60%;
-  height: 250px; /* Adjust based on your needs */
+  height: 250px; /* this is upto you! */
   position: relative;
   transform-style: preserve-3d;
-  animation: rotate 20s infinite linear; /* Adjust time as needed */
+  animation: rotate 20s infinite linear;
 }
 
 .carousel-item {
-  width: 250px; /* Adjust size as needed */
-  height: 400px; /* Adjust size as needed */
-  position: absolute; /* Positioned absolutely within the carousel */
-  left: 50%; /* Center items horizontally */
-  top: 50%; /* Center items vertically */
-  margin-left: -100px; /* Adjust based on item width for exact centering */
-  margin-top: -200px; /* Adjust based on item height for exact centering */
+  width: 250px; /* this is upto you */
+  height: 400px; /* this is upto you */
+  position: absolute; 
+  left: 50%; 
+  top: 50%;
+  margin-left: -100px; 
+  margin-top: -200px; 
   background-color: skyblue;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ video {
   }
 }
 
-/* Positioning items in 3D space around the Y-axis */
+
 .carousel-item:nth-child(1) {
   transform: rotateY(0deg) translateZ(300px);
 }
